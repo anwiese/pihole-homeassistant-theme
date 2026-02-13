@@ -1,0 +1,323 @@
+/* Pi-hole: A black hole for Internet advertisements
+*  (c) 2020 Pi-hole, LLC (https://pi-hole.net)
+*  Network-wide ad blocking via your own hardware.
+*
+*  Modified: Home Assistant Light Theme
+*  A modern, bright theme inspired by Home Assistant's light mode UI.
+*  Designed to visually integrate Pi-hole into a Home Assistant setup.
+*
+*  This file is copyright under the latest version of the EUPL.
+*  Please see LICENSE file for your rights under this license. */
+
+/* ===== Top Navigation Bar ===== */
+.main-header .navbar {
+  background-color: #03a9f4;
+}
+.main-header .navbar .nav > li > a,
+.main-header .navbar .nav > li > .navbar-text {
+  color: #fff;
+  max-height: 50px;
+}
+.main-header .navbar .nav > li > a:hover,
+.main-header .navbar .nav > li > a:active,
+.main-header .navbar .nav > li > a:focus,
+.main-header .navbar .nav .open > a,
+.main-header .navbar .nav .open > a:hover,
+.main-header .navbar .nav .open > a:focus {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #fff;
+}
+.main-header .navbar .sidebar-toggle {
+  color: #fff;
+}
+.main-header .navbar .sidebar-toggle:hover {
+  color: #fff;
+  background-color: #039be5;
+}
+@media (max-width: 767px) {
+  .main-header .navbar .dropdown-menu li.divider {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+  .main-header .navbar .dropdown-menu li a:hover {
+    background-color: #039be5;
+  }
+}
+.main-header .logo {
+  background-color: #039be5;
+  color: #fff;
+  border-bottom: 0 solid transparent;
+}
+.main-header .logo:hover {
+  background-color: #0288d1;
+}
+.main-header li.user-header {
+  background-color: #03a9f4;
+}
+.content-header {
+  background-color: transparent;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-body {
+  background: #f0f2f5;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer a:hover {
+  color: #03a9f4 !important;
+}
+
+/* ===== Sidebar (Light) ===== */
+.wrapper,
+.main-sidebar,
+.left-side {
+  background-color: #fafafa;
+}
+.user-panel > .info,
+.user-panel > .info > a {
+  color: #333;
+}
+.sidebar-menu > li.header {
+  color: #727272;
+  background-color: #f0f0f0;
+}
+.sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+}
+.sidebar-menu > li:hover > a,
+.sidebar-menu > li > a:focus,
+.sidebar-menu > li.active > a {
+  color: #03a9f4;
+  background-color: #e8f4fd;
+  border-left-color: #03a9f4;
+}
+.sidebar-menu > li > .treeview-menu {
+  margin: 0 1px;
+  background-color: #f5f5f5;
+}
+.sidebar a {
+  color: #444;
+}
+.sidebar a:hover {
+  text-decoration: none;
+}
+/* "Donate" sidebar button */
+.sidebar-menu > li.menu-donate:hover > a,
+.sidebar-menu > li.menu-donate > a:focus {
+  background-color: #e8f4fd;
+  border-left-color: #03a9f4;
+}
+.treeview-menu > li > a {
+  color: #666;
+}
+.treeview-menu > li.active > a,
+.treeview-menu > li > a:hover,
+.treeview-menu > li > a:focus {
+  color: #03a9f4;
+}
+.sidebar-form {
+  border-radius: 3px;
+  border: 1px solid #dde;
+  margin: 10px;
+}
+.sidebar-form input[type="text"],
+.sidebar-form .btn {
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid #dde;
+  height: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar-form input[type="text"] {
+  color: #444;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+}
+.sidebar-form input[type="text"]:focus,
+.sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  color: #333;
+  border-color: #03a9f4;
+}
+.sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #03a9f4;
+}
+.sidebar-form .btn {
+  color: #888;
+  border-top-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 0;
+}
+
+/* ===== Tabs ===== */
+.nav-tabs-custom > .nav-tabs {
+  background: #f0f2f5;
+}
+.nav-tabs-custom > .nav-tabs > li {
+  margin-right: 1px;
+}
+.nav-tabs-custom > .nav-tabs > li:not(.active):hover {
+  background: #fff;
+  border-top-color: #d2d6de;
+}
+.nav-tabs-custom > .nav-tabs > li > a,
+.nav-tabs-custom > .nav-tabs > li > a:hover {
+  color: #555;
+}
+.nav-tabs-custom > .nav-tabs > li > a:focus {
+  color: #03a9f4;
+}
+
+/* ===== Top-Nav Layout ===== */
+.layout-top-nav .main-header > .logo {
+  background-color: #03a9f4;
+  color: #fff;
+  border-bottom: 0 solid transparent;
+}
+.layout-top-nav .main-header > .logo:hover {
+  background-color: #039be5;
+}
+
+/* ===== Login Box ===== */
+.login-box {
+  background: #f5f5f5;
+}
+
+/* ===== Address/Domain Styling ===== */
+.not-used {
+  background-color: #f0f0f0;
+}
+.not-used:hover {
+  background-color: #ddd;
+}
+.used {
+  background-color: #fff;
+}
+.used:hover {
+  background-color: #eee;
+}
+
+/* ===== Graphs ===== */
+.graphs-grid {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.graphs-ticks {
+  color: #444;
+}
+
+/* ===== Progress Bar ===== */
+.progress {
+  background-color: #e8e8e8;
+}
+
+/* ===== Query Log Colors ===== */
+.text-black {
+  color: #000 !important;
+}
+
+.text-green-light {
+  color: #4caf50 !important;
+}
+
+.text-green {
+  color: #2e7d32 !important;
+}
+
+.text-orange {
+  color: #ef6c00 !important;
+}
+
+.text-red {
+  color: #d32f2f !important;
+}
+
+.text-vivid-blue {
+  color: #1976d2 !important;
+}
+
+/* ===== Debug Log Colors ===== */
+.log-red {
+  color: #c62828;
+}
+.log-green {
+  color: #2e7d32;
+}
+.log-yellow {
+  color: #ef6c00;
+}
+.log-blue {
+  color: #1565c0;
+}
+.log-purple {
+  color: #7b1fa2;
+}
+.log-cyan {
+  color: #00838f;
+}
+.log-gray {
+  color: #757575;
+}
+
+/* ===== Table Highlight ===== */
+td.highlight {
+  background-color: rgba(255, 204, 0, 0.2);
+}
+
+/* ===== Network Table ===== */
+.network-never {
+  background-color: #ffcdd2;
+}
+.network-recent {
+  background-color: #c8e6c9;
+}
+.network-old {
+  background-color: #fff9c4;
+}
+.network-older {
+  background-color: #ffe0b2;
+}
+.network-gradient {
+  background-image: linear-gradient(to right, #c8e6c9 0%, #fff9c4 100%);
+}
+
+/* ===== DataTable Buttons ===== */
+.datatable-bt,
+.datatable-bt:active,
+.datatable-bt:active:focus,
+.datatable-bt:focus {
+  background: #fff;
+  border-color: #ddd;
+  color: #444;
+}
+
+.datatable-bt:hover,
+.datatable-bt:active:hover {
+  background: #03a9f4;
+  border-color: #03a9f4;
+  color: #fff;
+}
+
+/*** Overwrite chrome's input field auto-filling ***/
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #444 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-transition: background-color 1s ease-in-out 0s;
+  transition: background-color 1s ease-in-out 0s;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+  border-color: #e0e0e0;
+}
+
+/* ===== Group Assignment Select ===== */
+.bootstrap-select > .dropdown-toggle {
+  border-radius: 0;
+  background-color: #fff;
+}
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-default:active {
+  background-color: #fff;
+}
