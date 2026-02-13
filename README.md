@@ -4,6 +4,8 @@ A modern, bright theme for Pi-hole v6 that visually integrates with [Home Assist
 
 ![Pi-hole](https://img.shields.io/badge/Pi--hole-v6-green) ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-compatible-blue)
 
+![Screenshot](screenshot.png)
+
 ## Features
 
 - Light sidebar (replacing the default dark `#222d32`)
@@ -18,14 +20,17 @@ A modern, bright theme for Pi-hole v6 that visually integrates with [Home Assist
 
 Requires [Advanced SSH & Web Terminal](https://github.com/hassio-addons/addon-ssh) with **Protection Mode disabled** (for Docker access).
 
+#### Download the theme
 ```bash
-# Download the theme
 curl -o /tmp/high-contrast.css https://raw.githubusercontent.com/anwiese/pihole-homeassistant-theme/main/high-contrast.css
+```
 
-# Backup the original
+#### Backup the original
+```bash
 docker cp PIHOLE_CONTAINER:/var/www/html/admin/style/themes/high-contrast.css /config/high-contrast.css.bak
-
-# Install the theme
+```
+#### Install the theme
+```bash
 docker cp /tmp/high-contrast.css PIHOLE_CONTAINER:/var/www/html/admin/style/themes/high-contrast.css
 ```
 
