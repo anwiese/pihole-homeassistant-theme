@@ -22,7 +22,7 @@ Requires [Advanced SSH & Web Terminal](https://github.com/hassio-addons/addon-ss
 
 #### Download the theme
 ```bash
-curl -o /tmp/high-contrast.css https://raw.githubusercontent.com/anwiese/pihole-homeassistant-theme/main/high-contrast.css
+curl -o /homeassistant/pi-hole/high-contrast.css https://raw.githubusercontent.com/anwiese/pihole-homeassistant-theme/main/high-contrast.css
 ```
 
 #### Backup the original
@@ -31,7 +31,7 @@ docker cp PIHOLE_CONTAINER:/var/www/html/admin/style/themes/high-contrast.css /c
 ```
 #### Install the theme
 ```bash
-docker cp /tmp/high-contrast.css PIHOLE_CONTAINER:/var/www/html/admin/style/themes/high-contrast.css
+docker cp /homeassistant/pi-hole/high-contrast.css PIHOLE_CONTAINER:/var/www/html/admin/style/themes/high-contrast.css
 ```
 
 Replace `PIHOLE_CONTAINER` with your Pi-hole container name. To find it:
@@ -62,8 +62,8 @@ Create a Home Assistant shell command in `configuration.yaml`:
 ```yaml
 shell_command:
   pihole_theme: >
-    docker cp /config/pi-hole/high-contrast.css
-    addon_0da538cf_pihole:/var/www/html/admin/style/themes/high-contrast.css
+    docker cp /homeassistant/pi-hole/high-contrast.css
+    PIHOLE_CONTAINER:/var/www/html/admin/style/themes/high-contrast.css
 ```
 
 Then create an automation that triggers on Home Assistant start:
