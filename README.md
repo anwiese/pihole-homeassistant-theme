@@ -46,8 +46,14 @@ docker ps --filter "name=pihole" --format "{{.Names}}"
    ```bash
    docker cp high-contrast.css PIHOLE_CONTAINER:/var/www/html/admin/style/themes/high-contrast.css
    ```
-3. In Pi-hole, go to **Settings → Web Interface → Theme** and select **"High contrast light"**
-4. Clear your browser cache (`Ctrl+Shift+R`)
+
+## Activation
+
+After installing the theme:
+
+1. In Pi-hole, go to **Settings → Web Interface - API Settings → Theme**
+2. Select **"High contrast light"**
+3. Clear your browser cache (`Ctrl+Shift+R`)
 
 ## Notes
 
