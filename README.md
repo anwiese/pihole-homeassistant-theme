@@ -58,7 +58,7 @@ After installing the theme:
 ## Notes
 
 - The theme replaces the built-in "High contrast light" theme since Pi-hole v6 does not support adding custom themes to the theme selector.
-- The theme will be reset when the Pi-hole addon is updated or restarted. To make it persistent, re-run the install command after each restart or automate it via a Home Assistant shell command.
+- The theme might be reset when the Pi-hole add-on is updated. To make it persistent, re-run the install command or automate it via a Home Assistant shell command.
 - Tested with [casperklein/homeassistant-addons](https://github.com/casperklein/homeassistant-addons) Pi-hole addon.
 
 ### Making it persistent (optional)
@@ -90,8 +90,6 @@ automation:
 ```bash
 docker cp /config/high-contrast.css.bak PIHOLE_CONTAINER:/var/www/html/admin/style/themes/high-contrast.css
 ```
-
-Or simply restart the Pi-hole addon.
 
 ## License
 
